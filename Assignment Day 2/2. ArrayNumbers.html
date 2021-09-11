@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     
+<!-- 2. Create a array with 10 numbers and print only the even numbers with a loop from that array. -->
+
+    <center><h1>Go to console</h1></center>
+    <p> <b>Right Click then select inspect and select console to see the output</b> </p>
+
+    <script>
+
+        var arr = [1, 22, 33, 64, 75, 106, 147, 228, 389, 500];
+        var arrElements = arr.values();
+        console.log("Array : ")
+        for(var i=0; i< arr.length; i++)
+        {
+            console.log(arr[i])
+        }
+        console.log(" Even numbers from the array : ")
+        function getEvenNumbers() 
+        {
+            for (var i = 0; i < arr.length; i++) 
+            {
+                if (arr[i] % 2 === 0) 
+                {
+                    console.log(arr[i]);
+                }
+            }
+        }
+
+        getEvenNumbers();
+
+    </script>
+
+</body>
+</html>
